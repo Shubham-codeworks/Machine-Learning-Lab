@@ -1,0 +1,88 @@
+# ======================================================================
+# DATA SCIENCE & RESEARCH .GITIGNORE (OPTIMIZED)
+# ======================================================================
+
+### --- Jupyter & Python ---
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+.jupyter/
+.ipython/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+### --- Data & Datasets (Protecting GitHub Quotas) ---
+# Ignore all large data formats by default
+data/
+datasets/
+*.csv
+*.tsv
+*.json
+*.parquet
+*.hdf5
+*.h5
+*.pickle
+*.pkl
+*.feather
+*.db
+*.sqlite3
+
+### --- Model Artifacts ---
+# Prevents heavy model weights from being pushed
+models/
+temp_models/
+*.joblib
+*.model
+*.pth
+*.onnx
+
+### --- Outputs & Visuals ---
+# Prevents cluttering the repo with every single plot iteration
+eda_output/
+analysis_results/
+plots/
+figures/
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.pdf
+*.html
+
+### --- Environments & OS ---
+venv/
+.venv/
+env/
+conda-env/
+.conda/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+
+### --- Sensitive Info ---
+.env
+.env.local
+research_config.py
+
+# ======================================================================
+# EXCEPTIONS (DO NOT IGNORE THESE)
+# ======================================================================
+
+# Keep the essentials for repo functionality
+!.gitignore
+!README.md
+!requirements.txt
+!environment.yml
+!setup.py
+
+# Keep specific small config files even if they are .json
+!config/*.json
+
+# Keep final results/plots for your README or reports
+# Create a 'results/' folder for images you WANT to show on GitHub
+!results/
+!results/*.png
+!results/*.jpg
